@@ -1,0 +1,69 @@
+/* 公共区域样式 */
+html,
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background:url('/assets/images/loginbg.jpg') no-repeat center;
+    background-size: cover;
+
+}
+
+/* 登录注册区域的样式 */
+.loginAndRegBox{
+width: 400px;
+height: 310px;
+background-color: #fff;
+/* 使用绝对定位使得登录页面小框框居中显示 */
+position: absolute;
+left: 50%;
+top: 50%;
+/* 分别回退自身位置的一半儿 */
+transform: translate(-50%,-50%);
+}
+
+/* 后台管理系统标题头部图片的样式 */
+.title-box{
+height: 60px;
+background: url('/assets/images/login_title.png')no-repeat center;
+}
+
+/* 注册的div样式，默认影藏 */
+.reg-box{
+    display: none;
+}
+
+/* 美化整个layui的样式 */
+.layui-form{
+    padding: 0 30px;
+}
+
+/* 去注册账号布局 */
+.links{
+    /* 整体向右浮动 */
+    display: flex;
+    /* 横向布局 */
+    justify-content: flex-end;
+}
+
+/* 文字大小为12 */
+.links a{
+    font-size: 12px;
+}
+
+/* 使用子绝父相，给小图标进行定位    */
+.layui-form-item{
+    position: relative;
+}
+
+.layui-icon{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+/* 添加paddind-left使得文本框里面的文字向右挤 */
+.layui-input{
+    padding-left: 32px;
+}
